@@ -7,7 +7,29 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <h1>Kalkylator</h1>
+      <form id="calcInput">
+        <input type="text" id="num1" placeholder="num1">
+
+        <input type="text" id="num2" placeholder="num2">
+
+        <label for="operator">Räknesätt</label>
+        <select name="operator" id="operator">
+          <option value="add">Addera</option>
+          <option value="sub">Subtrahera</option>
+          <option value="multi">Multiplicera</option>
+          <option value="divi">Dividera</option>
+        </select>
+        <button>Räkna ut</button>
+      </form>
+    <section>
+  <h3>Resultat:</h3>
+  <p id="resultText"></p>
+
+</section>
+      
+</div>
     <script type="module" src="/src/ts/main.ts"></script>
   </body>
 </html>
